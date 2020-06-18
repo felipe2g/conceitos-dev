@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Header from './components/Header.js';
 
+import './App.css';
+
 function App(){
 
   //useState returna um array com duas posições
