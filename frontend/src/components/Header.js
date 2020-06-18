@@ -5,7 +5,6 @@ export default function Header({ title, children }) {
 
     <header>
       <h1>{title}</h1>
-      {children}
     </header>
 
   );

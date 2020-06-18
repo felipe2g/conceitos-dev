@@ -3,17 +3,19 @@ import React from 'react';
 import Header from './components/Header.js';
 
 function App(){
+
+  const project = ['Desenvolvimento de app', 'Front-end web'];
+
   return (
     <div>
-      <Header title="Homepage" />
-      <Header title="Projects" />
-      <Header title="Menu">
+      <>
+        <Header title="Projects" />
+
         <ul>
-          <li>Página 1</li>
-          <li>Pagina 2</li>
-          <li>Login</li>
+          {project.map(project => <li key={project}>{project}</li>)}
         </ul>
-      </Header>
+
+      </>
     </div>
   )
 }
