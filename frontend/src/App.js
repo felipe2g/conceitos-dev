@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from './components/Header.js';
 
 import './App.css';
+import backgroundImage from './assets/background.jpg';
 
 function App(){
 
@@ -21,6 +22,8 @@ function App(){
     <div>
       <>
         <Header title="Projects" />
+
+        <img src={ backgroundImage } />
 
         <ul>
           {projects.map(project => <li key={project}>{project}</li>)}
