@@ -6,4 +6,7 @@ module.exports = {
     /* Adiciona as funcionalidades do react na conversão do babel*/
     '@babel/preset-react'
   ],
+  plugins: [
+    '@babel/plugin-transform-runtime'
+  ],
 }
