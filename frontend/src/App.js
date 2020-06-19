@@ -21,7 +21,13 @@ function App(){
   }, []);
 
   function handleAddProject() {
-    setProjects([...projects, `Novo Projeto ${Date.now()}`]);
+    // setProjects([...projects, `Novo Projeto ${Date.now()}`]);
+
+    api.post('projects', {
+      title: `Novo Projeto ${Date.now()}`,
+      owner: "Felipe Guimarães"
+    });
+
   }
 
   return (
