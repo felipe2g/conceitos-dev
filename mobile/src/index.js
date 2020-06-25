@@ -27,8 +27,8 @@ export default function App(){
         style={styles.container}
         data={projects}
         keyExtractor={project => project.id}
-        renderItem={({ item }) => (
-          <Text style={styles.project}>{item.title}</Text>
+        renderItem={({ item: project }) => (
+          <Text style={styles.project}>{project.title}</Text>
         )}
       />
 
