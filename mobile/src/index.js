@@ -42,6 +42,6 @@ const styles = StyleSheet.create({
   },
   project: {
     color: '#FFF',
-    fontSize: 120,
+    fontSize: 20,
   },
 });
